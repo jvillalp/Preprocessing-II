@@ -19,7 +19,7 @@ header{
             font-size: 17px;
         &:hover {
             text-decoration: underline;
-            color: black;
+            color: pink;
             } //end of hover
         }// end of a
     }//end of nav
@@ -29,16 +29,14 @@ header{
         width: 60%;
     }//end of display
     
-    @media (max-width: 500px) {
+    @media @mobile {
         flex-direction: column;
+        nav{
+            width: 90%;
+            justify-content: space-evenly;
+        }      
     }
-    nav{
-        width: 90%;
-        justify-content: space-evenly;
-    }
-
     .display{
         width: 65%;
     }
-      
 }//end of header
