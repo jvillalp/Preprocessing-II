@@ -1,1 +1,42 @@
 // Navigation Styles here
+header{
+    display: flex;
+    justify-content: baseline;
+    width: 100%;
+    margin-top: 3%;
+    padding-bottom: 3%; 
+
+    nav{
+        margin-top: 4%;
+        width: 40%;
+        // padding-bottom: 2%;
+        display:flex;
+        justify-content: space-between;
+       
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 17px;
+        &:hover {
+            text-decoration: underline;
+            color: pink;
+            } //end of hover
+        }// end of a
+    }//end of nav
+
+    .display{
+        align-self: flex-end;
+        width: 60%;
+    }//end of display
+    
+    @media @mobile {
+        flex-direction: column;
+        nav{
+            width: 90%;
+            justify-content: space-evenly;
+        }      
+    }
+    .display{
+        width: 65%;
+    }
+}//end of header
